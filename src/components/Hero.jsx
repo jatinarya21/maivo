@@ -1,36 +1,38 @@
-import React, { useState } from 'react'
-import { DarkBlueLeftEllipse, LightCyanRightEllipse, NavBarCloseMenu, NavBarOpenMenu } from './common/Icons';
-import EvCharger from '../assets/webp/hero_ev_charger.png'
+import React, { useState } from 'react';
+import { NavBarCloseMenu, NavBarOpenMenu } from './common/Icons';
 
 const Hero = () => {
     const [show, setShow] = useState(false);
+    if (show === true) {
+        document.body.classList.add("overflow_hidden")
+    }
+    else {
+        document.body.classList.remove("overflow_hidden")
+    }
     return (
-        <div className='bg-primary-background min-h-screen relative'>
-            {/* left ellipse  */}
-            <DarkBlueLeftEllipse />
-            <LightCyanRightEllipse />
-            {/* left ellipse  */}
+        <div className='hero_bg min-h-screen relative'>
             {/* Nav Bar */}
             <div className='container mx-auto px-3 xl:px-0 max-w-[1380px] pt-3.5'>
                 <div className='border rounded-full border-[#1a3242] h-[60px] md:h-[80px] w-full flex items-center justify-between '>
                     {/* company logo */}
                     <a className='font-inter font-normal text-xl md:text-4xl tracking-[15px] text-white pl-[30px] z-[3]' href="#">MAIVO</a>
-                    <ul className={` ${show ? "right_0" : " "} flex items-start flex-col fixed min-h-screen max-w-[350px] w-full sm:w-[360px] bg-[#D2E2EB] -right-full top-0 gap-5 z-10 pl-5 pt-20 duration-200 ease-in-out `}>
-                        <li className='text-black font-inter text-xl md:text-[28px] font-bold'>
+                    <ul className={` ${show ? "right_0" : " "} flex items-start flex-col fixed min-h-screen max-w-[350px] w-full sm:w-[360px] bg-[#D2E2EB] -right-full top-0 gap-5 z-10 pl-5 pt-40 duration-200 ease-in-out `}>
+                        <li className='text-primary font-inter text-xl md:text-[28px] font-bold'>
                             <a href="">Owners and Operators</a>
                         </li>
-                        <li className='text-black font-inter text-xl md:text-[28px] font-bold'>
+                        <li className='text-primary font-inter text-xl md:text-[28px] font-bold'>
                             <a href="">Services</a>
                         </li>
-                        <li className='text-black font-inter text-xl md:text-[28px] font-bold'>
+                        <li className='text-primary font-inter text-xl md:text-[28px] font-bold'>
                             <a href="">Contractors</a>
                         </li>
-                        <li className='text-black font-inter text-xl md:text-[28px] font-bold'>
+                        <li className='text-primary font-inter text-xl md:text-[28px] font-bold'>
                             <a href="">Q&A</a>
                         </li>
-                        <li className='text-black font-inter text-xl md:text-[28px] font-bold'>
+                        <li className='text-primary font-inter text-xl md:text-[28px] font-bold'>
                             <a href="">Contact US</a>
                         </li>
+                        <p className='absolute bottom-3'>Terms and Condition</p>
                     </ul>
                     <button onClick={() => setShow(!show)} className='text-white text-3xl z-10 transition-all duration-300 '>{show ? <NavBarCloseMenu /> : <NavBarOpenMenu />}</button>
                 </div>
@@ -43,13 +45,10 @@ const Hero = () => {
                             <h1 className='font-parabolica-bold text-3xl sm:text-4xl md:text-[56px] xl:text-[64px] !leading-[110%] text-white  '><span className='text-sky-blue'>Electrifying</span> Repair <br /> And Maintenance</h1>
                             <p className='font-grotesk text-white font-normal text-lg md:text-2xl mt-2 md:mt-[25px]  max-w-[620px] lg:max-w-full '>The go to repair and maintenance network for alternative fueling and renewable energy infrastructure</p>
                             <div className='flex items-center  flex-col lg:flex-row gap-3 md:gap-[26px] mt-5 md:mt-[45px]'>
-                                <button className='bg-sky-blue py-4 px-5 md:py-7  md:px-[30px] rounded-full font-parabolica-medium text-base sm:text-lg !leading-[73%] z-[2]'>For Owners and Operators</button>
-                                <button className='border border-white text-white py-4 px-5 md:py-7  md:px-[30px] rounded-full font-parabolica-medium text-base sm:text-lg !leading-[73%] z-[2]'>For Contractors</button>
+                                <button className='bg-sky-blue relative fill-btn-hover overflow-hidden py-4 px-5 md:py-7  md:px-[30px] rounded-full font-parabolica-medium text-base sm:text-lg !leading-[73%] z-[2]'>For Owners and Operators</button>
+                                <button className='border border-white text-white dark-fill-hover relative overflow-hidden py-4 px-5 md:py-7  md:px-[30px] rounded-full font-parabolica-medium text-base sm:text-lg !leading-[73%] z-[2]'>For Contractors</button>
                             </div>
                         </div>
-                    </div>
-                    <div className='w-full flex justify-end lg:w-5/12 mt-3 lg:mt-0'>
-                        <img height={700} width={600} className='relative right-[-10px] lg:absolute lg:right-0 top-[25%] 2xl:top-[20%] min-w-[290px] w-[65%] lg:w-[40%]  max-w-[600px]' src={EvCharger} alt="" />
                     </div>
                 </div>
             </div>

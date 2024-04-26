@@ -6,10 +6,81 @@
 
 @font-face {
     font-family: "parabolica-bold";
-    src: url(./assets/font/parabolica-test/ParabolicaTest-Bold-BF643e085ad372a.otf);
+    src: url('./assets/font/parabolica-test/ParabolicaTest-Bold-BF643e085ad372a.otf');
 }
 
 @font-face {
     font-family: "parabolica-medium";
-    src: url(./assets/font/parabolica-test/ParabolicaTest-Medium-BF643e085ae3392.otf);
+    src: url('./assets/font/parabolica-test/ParabolicaTest-Medium-BF643e085ae3392.otf');
 }
+
+.hero_bg{
+    background-image: url('./assets/webp/hero_background_ev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.overflow_hidden{
+    overflow: hidden;
+}
+.fill-btn-hover::before,
+.fill-btn-hover::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+.fill-btn-hover:hover::before,
+.fill-btn-hover:hover::after {
+    opacity: 0.5;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.fill-btn-hover:hover::before {
+    transform: translate3d(50%, 0, 0) scale(1.1);
+}
+
+.fill-btn-hover:hover::after {
+    transform: translate(50%, 0) scale(1.6);
+}
+.dark-fill-hover::before,
+.dark-fill-hover::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+.dark-fill-hover:hover::before,
+.dark-fill-hover:hover::after {
+    opacity: 0.3;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.dark-fill-hover:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.8);
+}
+
+.dark-fill-hover:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+}
+
