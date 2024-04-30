@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavBarCloseMenu, NavBarOpenMenu } from './common/Icons';
+import SmHeroImg from '../assets/webp/hero_ev_charger.png'
 
 const Hero = () => {
     const [show, setShow] = useState(false);
@@ -10,7 +11,7 @@ const Hero = () => {
         document.body.classList.remove("overflow_hidden")
     }
     return (
-        <div className='hero_bg min-h-screen relative'>
+        <div className='bg-[#001B2C] hero_bg pb-10 lg:pb-0 lg:min-h-[50vh] xl:min-h-screen relative '>
             {/* Nav Bar */}
             <div className='container mx-auto px-3 xl:px-0 max-w-[1380px] pt-3.5'>
                 <div className='border rounded-full border-[#1a3242] h-[60px] md:h-[80px] w-full flex items-center justify-between '>
@@ -38,7 +39,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* Hero section */}
-            <div className='container mx-auto px-3 max-w-[1350px] min-h-[95vh]'>
+            <div className='container mx-auto px-3 max-w-[1350px] xl:min-h-[95vh]'>
                 <div className="flex flex-wrap justify-between items-center ">
                     <div className='w-full lg:w-6/12 xl:w-5/12 '>
                         <div className='mt-12 lg:mt-20 xl:mt-20  xl:pt-16 text-center lg:text-start flex flex-col justify-center items-center lg:justify-start lg:items-start'>
@@ -49,6 +50,9 @@ const Hero = () => {
                                 <button className='border border-white text-white dark-fill-hover relative overflow-hidden py-4 px-5 md:py-7  md:px-[30px] rounded-full font-parabolica-medium text-base sm:text-lg !leading-[73%] z-[2]'>For Contractors</button>
                             </div>
                         </div>
+                    </div>
+                    <div className='w-full flex justify-end lg:hidden'>
+                        <img className='w-[60%] max-w-[650px] min-w-[275px] relative -right-2.5' src={SmHeroImg} alt="" />
                     </div>
                 </div>
             </div>

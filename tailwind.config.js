@@ -9,6 +9,7 @@ module.exports = {
       grotesk: ['Hanken Grotesk', 'sans-serif'],
       "parabolica-bold": ['parabolica-bold'],
       "parabolica-medium": ['parabolica-medium'],
+      "parabolica-regular": ['parabolica-regular'],
     },
 
 
@@ -17,6 +18,7 @@ module.exports = {
         "primary-background": '#001B2C',
         "sky-blue": '#45CDFF',
         "dark-blue": '#0912FF',
+        "light-blue": '#D9F4FF',
         "light-cyan": '#8FE1FF',
       },
       colors: {
