@@ -1,7 +1,7 @@
 import React from 'react'
-import ConnectingEvCharger from '../assets/webp/connecting_ev_charger.png'
-import ConnectingEvChargerRecentActivty from '../assets/webp/connecting_ev_charger_recent_activity.png'
-import StickerBackground from '../assets/webp/light_plus_stickers_bg.png'
+import ConnectingEvCharger from '../assets/webp/connecting_ev_charger.webp'
+import ConnectingEvChargerRecentActivty from '../assets/webp/connecting_ev_charger_recent_activity.webp'
+import StickerBackground from '../assets/webp/light_plus_stickers_bg.webp'
 
 const ConnectingEv = () => {
     return (

@@ -120,7 +120,7 @@ body::-webkit-scrollbar{
     transform: translate(50%, 0) scale(1.1);
 }
 .footer_bg{
-    background-image: url('../src/assets/webp/footer_bg.png');
+    background-image: url('../src/assets/webp/footer_bg.webp');
     background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar{
 
 @media (min-width:1024px) {
     .hero_bg {
-        background-image: url('./assets/webp/hero_background_ev.png');
+        background-image: url('./assets/webp/hero_background_ev.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

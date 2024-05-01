@@ -1,5 +1,5 @@
 import React from 'react'
-import CarPoleImg from '../assets/webp/cars_poles.png'
+import CarPoleImg from '../assets/webp/cars_poles.webp'
 
 const CarPole = () => {
   return (

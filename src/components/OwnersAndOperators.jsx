@@ -1,5 +1,5 @@
 import React from 'react'
-import OwnersOperatorsImg from '../assets/webp/owner_and_operator.png'
+import OwnersOperatorsImg from '../assets/webp/owner_and_operator.webp'
 
 const OwnersAndOperators = () => {
   return (

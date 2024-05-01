@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavBarCloseMenu, NavBarOpenMenu } from './common/Icons';
-import SmHeroImg from '../assets/webp/hero_ev_charger.png'
+import SmHeroImg from '../assets/webp/hero_ev_charger.webp'
 
 const Hero = () => {
     const [show, setShow] = useState(false);
