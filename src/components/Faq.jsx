@@ -3,19 +3,19 @@ import { FaqItems } from './common/Helper';
 import { CloseAccordion, OpenAccordion } from './common/Icons';
 
 const Faq = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const handleClick = (index) => {
         setActiveIndex(index === activeIndex ? null : index);
     };
 
     return (
-        <div className='mb-28'>
+        <div id='faq' className='pb-24'>
             <div className="container mx-auto px-3 max-w-[1320px] mt-[70px]">
-                <h2 className='text-primary text-2xl md:text-4xl md:text-[50px] text-center font-bold '>Frequently Asked Questions</h2>
+                <h2 className='text-primary text-2xl md:text-4xl md:text-[50px] text-center font-bold !leading-[72%]'>Frequently Asked Questions</h2>
                 <div className='flex flex-col sm:flex-row items-center gap-4 justify-center mt-5 md:mt-[50px]'>
-                    <button className='font-parabolica-medium font-medium text-base md:text-lg bg-sky-blue z-[2] py-5 px-[30px] rounded-full relative fill-btn-hover overflow-hidden leading-[70%]'>Owners Operations</button>
-                    <button className='font-parabolica-medium dark-fill ml-6 relative overflow-hidden z-[2] font-medium text-base md:text-lg border-black border py-5 px-[30px] rounded-full leading-[72%]'>Contractors</button>
+                    <button className='font-parabolica-medium font-medium text-base md:text-lg bg-sky-blue z-[2] py-3 px-[30px] rounded-full relative fill-btn-hover overflow-hidden leading-[70%]'>Owners Operations</button>
+                    <button className='font-parabolica-medium dark-fill ml-6 relative overflow-hidden z-[2] font-medium text-base md:text-lg border-black border py-3 px-[30px] rounded-full leading-[72%]'>Contractors</button>
                 </div>
                 <div className="mt-9 md:mt-[72px]">
                     {FaqItems.map((item, index) => (

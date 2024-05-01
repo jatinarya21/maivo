@@ -3,10 +3,10 @@ import { ServicesCard } from './common/Helper'
 
 const OurServices = () => {
     return (
-        <div className='relative'>
+        <div id='services' className='relative'>
             <span className='w-[273px] h-[273px] bg-sky-blue absolute  blur-[250px] left-0 -top-10 z-[-1] '></span>
             <div className="container mx-auto px-3 max-w-[1320px] py-12 lg:py-20 xl:py-[162px]">
-                <h2 className='font-parabolica-bold font-bold text-[50px] text-primary text-center'>Our Services</h2>
+                <h2 className='font-parabolica-bold font-bold text-3xl md:text-[50px] text-primary text-center !leading-[72%]'>Our Services</h2>
                 <div className='flex flex-wrap gap-7 lg:gap-0 pt-5 lg:pt-[59px] '>
                     {
                         ServicesCard.map((cards) => (

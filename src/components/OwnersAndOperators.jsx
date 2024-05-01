@@ -3,7 +3,7 @@ import OwnersOperatorsImg from '../assets/webp/owner_and_operator.png'
 
 const OwnersAndOperators = () => {
   return (
-      <div className='bg-[#D9F4FF] relative -left-3.5'>
+      <div id='owners' className='bg-[#D9F4FF] relative -left-3.5'>
           <div className="container mx-auto px-3 xl:px-0 max-w-[1378px]">
               <div className='flex flex-wrap justify-center lg:justify-between pt-12 md:pt-[72px] pb-12 md:pb-[72px] xl:pb-[136px] items-center'>
                   <div className='w-full lg:w-7/12 text-center flex flex-col items-center justify-center lg:items-start lg:text-start pl-1.5'>

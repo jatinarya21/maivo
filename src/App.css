@@ -19,7 +19,12 @@
     src: url('./assets/font/parabolica-test/ParabolicaTest-Regular-BF643e085b3654e.otf');
 }
 
-
+body::-webkit-scrollbar{
+    display: none;
+}
+ html{
+    scroll-behavior: smooth;
+}
 
 .overflow_hidden {
     overflow: hidden;
@@ -127,6 +132,5 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
     }
 }

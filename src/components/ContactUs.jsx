@@ -45,12 +45,12 @@ const ContactUs = () => {
 
 
     return (
-        <div className='bg-[#F6FCFF] my-[80px] lg:my-[150px]'>
+        <div id='contact' className='bg-[#F6FCFF] my-[80px] lg:my-[150px]'>
             <div className='container mx-auto  max-w-[1320px] shadow-[-5px_5px_0px_0px_#45CDFF] border border-sky-blue py-[60px] lg:py-[80px] px-3 md:px-[60px]'>
                 <div className='flex flex-wrap-reverse justify-between lg:flex-wrap'>
                     <div className='w-full lg:w-4/12 xl:w-4/12'>
                         <h2 className='font-parabolica-bold font-bold text-5xl hidden lg:inline-flex'>Contact Us</h2>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col mt-[40px]'>
                             {/* Mail */}
                             <div className='py-[26.5px] pr-1  gap-4 items-center inline-flex'>
                                 <Mail />
@@ -70,7 +70,7 @@ const ContactUs = () => {
                     </div>
                     {/* FOrm */}
                     <div className='w-full lg:w-7/12 xl:w-8/12'>
-                        <h2 className='font-parabolica-bold font-bold text-5xl text-center mb-10'>Contact Us</h2>
+                        <h2 className='font-parabolica-bold font-bold text-3xl sm:text-5xl text-center mb-10 lg:hidden'>Contact Us</h2>
                         <form onSubmit={handleSubmit} className="max-w-[694px] mx-auto ">
                             <div className="mb-[30px]">
                                 <input
@@ -121,7 +121,7 @@ const ContactUs = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full  py-5 bg-sky-blue text-black font-parabolica-medium font-medium rounded-full  fill-btn-hover relative z-[1] overflow-hidden  focus:outline-none "
+                                className="w-full  py-[22.5px] bg-sky-blue text-black font-parabolica-medium font-medium rounded-full  fill-btn-hover relative z-[1] overflow-hidden  focus:outline-none "
                             >
                                 Submit
                             </button>
