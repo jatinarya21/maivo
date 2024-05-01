@@ -10,8 +10,8 @@ const OurServices = () => {
                 <div className='flex flex-wrap gap-7 lg:gap-0 pt-5 lg:pt-[59px] '>
                     {
                         ServicesCard.map((cards) => (
-                            <div className='w-full lg:w-6/12 px-3.5'>
-                                <div className='border-2 border-sky-blue pl-3 lg:pl-[30px] pt-[30px] pr-3 lg:pr-0 pb-14 flex items-center gap-10  flex-col md:flex-row text-center justify-center lg:text-start hover:shadow-[-10px_10px_0px_0px_#45CDFF] duration-300 lg:max-h-[221px]'>
+                            <div className='w-full lg:w-6/12 px-3'>
+                                <div className='border-2 border-sky-blue max-w-[645px] pl-3 lg:pl-[30px] pt-[30px] pr-3 lg:pr-[22px] pb-7 md:pb-14 flex items-center gap-10  flex-col md:flex-row text-center justify-center lg:text-start hover:shadow-[-10px_10px_0px_0px_#45CDFF] duration-300 lg:max-h-[221px]'>
                                     <div className='w-[220px] flex justify-center items-center'>
                                         <img width={100} height={100} src={cards.imgsrc} alt="" />
                                     </div>

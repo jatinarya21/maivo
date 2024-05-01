@@ -6,7 +6,7 @@ const WhyItMatters = () => {
         <div className='bg-light-blue py-12 lg:py-20 xl:py-[100px]'>
             <div className='container mx-auto px-3 xl:px-0 max-w-[1322px]'>
                 <h2 className='text-center font-parabolica-bold font-bold text-3xl md:text-[50px] !leading-[72%]'>Why It Matters</h2>
-                <div className='flex flex-wrap justify-between pt-9 md:pt-[59px] gap-y-14 lg:gap-y-20'>
+                <div className='flex flex-wrap justify-between pt-9 md:pt-[59px] gap-y-8 md:gap-y-14 lg:gap-y-20'>
                     {
                         WhyMattersCards.map((cards) => (
                             <div className='w-full sm:w-6/12 lg:w-4/12 xl:w-[24%] flex items-center justify-center'>
@@ -16,7 +16,7 @@ const WhyItMatters = () => {
                                     </div>
                                     <div className='mt-[18px]'>
                                         <h3 className='font-parabolica-medium font-medium text-2xl leading-[142%] mb-5'>{cards.heading}</h3>
-                                        <p className='font-grotesk font-normal'>{cards.para}</p>
+                                        <p className='font-grotesk font-normal text-lg w-[270px]'>{cards.para}</p>
                                     </div>
                                 </div>
                             </div>
