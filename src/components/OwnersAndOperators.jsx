@@ -12,7 +12,7 @@ const OwnersAndOperators = () => {
                         <p className='font-grotesk text-sm sm:text-xl xl:text-2xl font-light max-w-[550px] xl:max-w-[730px]'>MAIVO simplifies the complex ecosystem of EV Charging Station Repair and Maintenance procurement, ensuring your investment is always ready to serve the growing market of electric vehicle owners.</p>
                       <button className='mt-[45px] font-parabolica-medium font-medium text-base md:text-lg px-5 py-3 md:py-5  md:px-[30px] bg-white border border-black !leading-[65%] rounded-full hover:bg-black hover:text-white duration-500 ease-in-out'>Sign up for free</button>
                   </div>
-                  <div className='w-full lg:w-5/12 flex justify-center mt-5 lg:mt-0'>
+                  <div className='w-full lg:w-5/12 flex justify-center mt-9 lg:mt-0'>
                       <img width={530} height={508} src={OwnersOperatorsImg} alt="" />
                   </div>
               </div>
